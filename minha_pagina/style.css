@@ -97,6 +97,7 @@ img {
     border-radius: 10px;
     max-width: 100%;
     transition: 0.3s;
+    box-shadow: 0 0 15px rgba(56, 189, 248, 0.4);
 }
 
 img:hover {
@@ -107,6 +108,13 @@ img:hover {
 figure {
     margin-top: 25px;
     text-align: center;
+}
+
+figure iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    border-radius: 10px;
 }
 
 figcaption {
