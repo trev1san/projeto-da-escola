@@ -1,0 +1,141 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fundo com imagem + overlay */
+body {
+    font-family: Arial, sans-serif;
+    background: url("https://wallpapers.com/images/hd/fundode-cidade-neon-p4dscij55weqfc4u.jpg") no-repeat center center fixed;
+    background-size: cover;
+    color: #e2e8f0;
+    line-height: 1.6;
+}
+
+/* escurece o fundo (ESSENCIAL) */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.65);
+    z-index: -1;
+}
+
+/* destaque neon */
+span {
+    font-family: 'Orbitron', sans-serif;
+    color: #38bdf8;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(56, 189, 248, 0.7);
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 60px 20px;
+    background: rgba(2, 6, 23, 0.7);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(56, 189, 248, 0.2);
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+header h3 {
+    margin-top: 10px;
+    color: #94a3b8;
+}
+
+/* Navbar */
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #e2e8f0;
+    padding: 8px 14px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: #38bdf8;
+    color: #020617;
+    transform: translateY(-2px);
+}
+
+/* Sections */
+section {
+    padding: 40px 25px;
+    max-width: 900px;
+    margin: 40px auto;
+
+    background: rgba(15, 23, 42, 0.65);
+    backdrop-filter: blur(12px);
+
+    border-radius: 15px;
+    border: 1px solid rgba(56, 189, 248, 0.15);
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+section h2 {
+    margin-bottom: 15px;
+    color: #38bdf8;
+}
+
+/* Imagens */
+img {
+    margin-top: 10px;
+    border-radius: 10px;
+    max-width: 100%;
+    transition: 0.3s;
+    box-shadow: 0 0 15px rgba(56, 189, 248, 0.4);
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+/* Figures */
+figure {
+    margin-top: 25px;
+    text-align: center;
+}
+
+figure iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    border-radius: 10px;
+}
+
+figcaption {
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #94a3b8;
+}
+
+/* Contato */
+#contato nav ul {
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(2, 6, 23, 0.7);
+    backdrop-filter: blur(10px);
+    margin-top: 40px;
+    color: #94a3b8;
+    border-top: 1px solid rgba(56, 189, 248, 0.2);
+}
